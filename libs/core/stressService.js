@@ -12,9 +12,9 @@ async function StartStress(req, reqReply) {
             ' -c ' + req.payload.concurrent +
             ' -t ' + req.payload.responseWaittime +
             ' --html=' + env.logPath + '/report-$(date +%s).html' +
-            ' --threads=' + req.payload.threads +
-            ' --force'
-            // ' --verbose'
+            ' --threads=' + req.payload.threads // +
+            // ' --force' +
+            // ' --verbose c'
         );
 
         reqReply(result.stderr).code(200);

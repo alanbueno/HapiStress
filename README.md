@@ -1,7 +1,7 @@
 # HapiStress
 Basic application for stress tests on HTTP(s) endpoints.
 
-_HapiStress is a basic application for stress testing HTTP(s) endpoints build on hapi.js framework.
+HapiStress is a basic application for stress testing HTTP(s) endpoints build on hapi.js framework based on "stresser" tool, available on https://github.com/legraphista/stresser.
 
 ## Ready, set, go!
 
@@ -18,6 +18,8 @@ Method: POST
 
 Host: "http://localhost:port/"
 You can set the port on environment file, the default is 10003.
+
+Logs: On environment.js file you'll find a "logPath" variable that defines the path of the html logs, just change the "/home/alan/Documents/TestOut/" for the path u want to save your logs on server.
 
 Path: "/stress"
 Example:http://localhost:10003/stress

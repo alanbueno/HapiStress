@@ -31,7 +31,7 @@ async function StartStress(req, reqReply) {
         result = await execAsyncClass.execAsync(command);
       }
 
-      reqReply("Total de cpf's acionados: " + index).code(200);
+      reqReply("Total de itens processados: " + index).code(200);
       return;
     }
 

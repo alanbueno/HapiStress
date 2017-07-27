@@ -3,7 +3,7 @@ module.exports = {
 }
 
 let execAsyncClass = require('async-child-process'),
-  env = require('../../environment/environment.js');
+  env = require('../../../environment/environment.js');
 
 async function StartStress(req, reqReply) {
   try {

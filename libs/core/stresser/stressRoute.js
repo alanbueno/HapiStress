@@ -15,13 +15,12 @@ let trataRequest = {
   handler: stressController.Main,
   validate: {
     payload: {
+      stressType: Joi.string().required(),
+      target: Joi.string().required(),
       url: Joi.string().required(),
-      count: Joi.string().optional(),
-      concurrent: Joi.string().optional(),
-      responseWaittime: Joi.string().required(),
-      threads: Joi.string().required(),
-      force: Joi.string().optional(),
-      dynamicParam: Joi.string().optional()
+      rpm: Joi.number().integer().required(),
+      duration: Joi.number().integer().required(),
+      variables: Joi.optional(),
     }
   }
 }

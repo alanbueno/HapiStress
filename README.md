@@ -1,7 +1,7 @@
 # HapiStress
 Basic application for stress tests on HTTP(s) endpoints.
 
-HapiStress is a basic application for stress testing HTTP(s) endpoints build on hapi.js framework based on "stresser" tool, available on https://github.com/legraphista/stresser.
+HapiStress is a basic application for stress testing HTTP(s) endpoints build on hapi.js framework based on "stresser" and "artillery" tools, available on https://github.com/legraphista/stresser and https://github.com/shoreditch-ops/artillery.
 
 ## Ready, set, go!
 

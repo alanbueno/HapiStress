@@ -1,10 +1,15 @@
 module.exports = {
-    Main: Main
+    Stress: Stress,
+    FlowStress: FlowStress
 };
 
 let stressService = require('./stressService.js');
 
-function Main(req, reply) {
+function Stress(req, reply) {
     stressService.StartStress(req, reply);
+}
+
+function FlowStress(req, reply) {
+    stressService.StartFlowStress(req, reply);
 }
 

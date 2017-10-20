@@ -1,7 +1,6 @@
 let Hapi = require('hapi'),
     env = require('./environment/environment.js'),
-    server = new Hapi.Server(),
-    http = require('http');
+    server = new Hapi.Server();
 
 server.connection({ port: env.api.port });
 

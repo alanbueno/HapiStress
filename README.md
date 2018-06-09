@@ -26,29 +26,29 @@ And some required parameters for the stress test execution:
 
 Dynamic stress test:
 ```
-    "stressType": "dynamic",
-    "target": "http://endpoint.com"
-    "url": "/path/otherPath?dynamicParam={{param}}"
-    "rpm": 2000,
-    "duration": 180,
-    "variables": 
-    [
-      {"param": 
-        [
-	  "1",
-	  "2",
-	  "3"
-	]
-      }
-    ]
+"stressType": "dynamic",
+"target": "http://endpoint.com"
+"url": "/path/otherPath?dynamicParam={{param}}"
+"rpm": 2000,
+"duration": 180,
+"variables": 
+  [
+    {"param": 
+      [
+        "1",
+	"2",
+	"3"
+      ]
+    }
+ ]
 ```
 Static stress test:
 ```
-    "stressType": "static",
-    "target": "http://endpoint.com"
-    "url": "/path/otherPath?dynamicParam=paramValue"
-    "rpm": 2000,
-    "duration": 180
+"stressType": "static",
+"target": "http://endpoint.com"
+"url": "/path/otherPath?dynamicParam=paramValue"
+"rpm": 2000,
+"duration": 180
 ```
 
 ___

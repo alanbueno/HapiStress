@@ -23,6 +23,7 @@ Path: "/stress"
 Example:http://localhost:10003/stress
 
 And some required parameters for the stress test execution:
+
 Dynamic stress test:
 ```
     "stressType": "dynamic",
@@ -31,15 +32,15 @@ Dynamic stress test:
     "rpm": 2000,
     "duration": 180,
     "variables": 
-		[
-			{"param": 
-				[
-				    "1",
-				    "2",
-				    "3"
-				]
-			}
-		]
+    [
+      {"param": 
+        [
+	  "1",
+	  "2",
+	  "3"
+	]
+      }
+    ]
 ```
 Static stress test:
 ```
